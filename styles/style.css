@@ -33,7 +33,7 @@ ol {
 
 .page {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     inline-size: 1200px;
     block-size: 100%;
@@ -54,6 +54,7 @@ ol {
 }
 
 .result {
+    flex-shrink: 1;
     width: 711px;
     height: 456px;
 }
@@ -171,19 +172,10 @@ ol {
 
 .search-form__textfield {
     background-color: #1b1919;
-    border-top: 2px solid rgba(255, 255, 255, 0.7);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-    border-right: none;
     width: 222px;
-    color: rgba(255, 255, 255, 0.70);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    min-height: 28px;
     font-family: "Fira Sans Condensed", sans-serif;
     font-size: 18px;
-    font-style: normal;
-    line-height: normal;
     border-right: 0px solid #FFF;
     border-top: 1px solid #FFF;
     border-left: none;
@@ -234,7 +226,6 @@ ol {
 
 .search-form__submit-button {
     padding: 4px 4px;
-    max-height: 33px;
     margin-top: 16px;
     margin-left: 31px;
     cursor: pointer;
@@ -377,7 +368,8 @@ ol {
 
 .content__video-card-description-container {
     min-height: 100%;
-    height: auto;
+    margin-left: 3px;
+    margin-top: 5px;
     height: 100%;
 }
 
