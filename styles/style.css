@@ -106,7 +106,10 @@ ol {
 .search-form__label:has(:focus-visible) {
     outline: 1px solid rgb(255, 254, 254);
 }
-
+.search-form__label-text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .search-form__label:active {
     color: #ffffff;
