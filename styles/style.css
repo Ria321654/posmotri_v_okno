@@ -100,61 +100,20 @@ ol {
     display: flex;
     align-items: center;
     gap: 5px;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.search-form__label-text {
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    color: #FFF;
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.search-form__label-text:hover {
-    text-underline-offset: 1px;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-}
-.search-form__label-text:has(:focus-visible) {
-    inline-size: 1px;
-    block-size: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 1px solid white;
-}
-
-.search-form__label-text:active {
-    text-decoration: none;
+    width: fit-content;
 }
 
 .search-form__label:has(:focus-visible) {
-    width: fit-content;
-    border: 1px solid white;
+    outline: 1px solid rgb(255, 254, 254);
 }
 
-.search-form__label:focus {
-    width: fit-content;
-    outline: none;
-}
-
-.search-form__label:focus-visible {
-    border: 2px solid #ffffff;
-    outline: none;
-    width: fit-content;
-}
 
 .search-form__label:active {
     color: #ffffff;
     border: none;
 }
+
+
 .visually-hidden {
     position: absolute;
     inline-size: 1px;
@@ -165,6 +124,19 @@ ol {
     white-space: nowrap;
 }
 
+
+.search-form__textfield:focus { 
+    outline: none;
+    border-right: 0px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-left: none;
+    border-bottom: 1px solid #FFF;
+} 
+
+.search-form__textfield:hover {
+    text-decoration: none;
+}
+ 
 .search-form__textfield {
     background-color: #1b1919;
     width: 222px;
@@ -179,15 +151,15 @@ ol {
     outline: none;
     padding: 4px 4px;
     color: #fff;
+    text-decoration: none;
 }
 
-.search-form__textfield:focus {
-    border-top: 1px solid rgba(255, 255, 255, 0.7); 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7); 
-}
 
 .search-form__textfield:active {
-    border: 1px solid #FFF;
+    border-right: 0px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-left: none;
+    border-bottom: 1px solid #FFF;
     text-decoration: none;
 }
 
@@ -212,10 +184,17 @@ ol {
     text-decoration: none;
 }
 
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
     background: white;
     outline: 1px solid white;
     border: 1px solid black;
+}
+
+.search-form__pseudo-checkbox:active{
+    background: white;
+    outline: 1px solid white;
+    border: 1px solid black; 
 }
 
 .search-form__pseudo-checkbox {
