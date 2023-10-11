@@ -174,7 +174,7 @@ ol {
 
 .search-form__checkbox-list {
     display: grid;
-    grid-template-columns: 74px 77px 74px;
+    grid-template-columns:  75px 76px 74px;
     flex-direction: row;
     cursor: pointer;
     width: 172px;
@@ -337,7 +337,7 @@ ol {
     line-height: 100%; 
     text-transform: uppercase;
     margin-bottom: 10px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .content__video-card-description {
