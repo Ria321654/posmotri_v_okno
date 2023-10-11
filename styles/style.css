@@ -279,7 +279,7 @@ ol {
 }
 
 .content__list-item:not(:last-of-type) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .content__list-item:active {
@@ -311,7 +311,7 @@ ol {
 
 .content__video-card {
     display: grid;
-    grid-template-columns: 200px 192px;
+    grid-template-columns: 202px 192px;
 }
 
 .content__video-card:hover {
